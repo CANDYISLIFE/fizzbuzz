@@ -49,13 +49,14 @@ listLength = int(input("How many numbers shall we print? "))
 fizzMult = int(input("For multiples of what number shall we print 'Fizz'? "))
 buzzMult = int(input("For multiples of what number shall we print 'Buzz'? "))
 
-for i in range(listLength):
-    if i % fizzMult == 0:
-        print ("Fizz")
-    if i % buzzMult == 0:
-        print ("Buzz")
-    if (i % fizzMult and i % buzzMult == 0):
+for i in range(1, listLength+1):
+    if (i % fizzMult == 0 and i % buzzMult == 0):
         print ("FizzBuzz")
+    elif i % fizzMult == 0:
+        print ("Fizz")
+    elif i % buzzMult == 0:
+        print ("Buzz")
+    
     else:
         print (i)
         
