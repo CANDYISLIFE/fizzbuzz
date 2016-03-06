@@ -1,6 +1,6 @@
 """
 fizzbuzz.py
-Author: <your name here>
+Author: Billy
 Credit: Ryan (my big brother), Mr Dennison, David
 
 Assignment:
