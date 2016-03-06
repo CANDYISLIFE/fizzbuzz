@@ -1,7 +1,7 @@
 """
 fizzbuzz.py
 Author: <your name here>
-Credit: <list sources used, if any>
+Credit: Ryan (my big brother), Mr Dennison, David
 
 Assignment:
 
@@ -44,3 +44,20 @@ Fizz
 Fizz
 Buzz
 """
+
+listLength = input("How many numbers shall we print? ")
+fizzMult = input("For multiples of what number shall we print 'Fizz'? ")
+buzzMult = input("For multiples of what number shall we print 'Buzz'? ")
+
+for i in range(listLength):
+    if i % fizzMult == 0:
+        print "Fizz"
+    if i % buzzMult == 0:
+        print "Buzz"
+    if (i % fizzMult and i % buzzMult == 0):
+        print "FizzBuzz"
+    else:
+        print i
+        
+        
+        
