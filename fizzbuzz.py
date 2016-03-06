@@ -51,11 +51,11 @@ buzzMult = input("For multiples of what number shall we print 'Buzz'? ")
 
 for i in range(listLength):
     if i % fizzMult == 0:
-        print "Fizz"
+        print ("Fizz")
     if i % buzzMult == 0:
-        print "Buzz"
+        print ("Buzz")
     if (i % fizzMult and i % buzzMult == 0):
-        print "FizzBuzz"
+        print ("FizzBuzz")
     else:
         print i
         
